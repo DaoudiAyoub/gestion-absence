@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+
+    >
+    <RelativeLayout
+        android:id="@+id/StudentRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageIv"
+            android:src="@drawable/studenticon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imageIv"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+
+    >
+    <RelativeLayout
+        android:id="@+id/ObservationRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageObs"
+            android:src="@drawable/obssss"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/observationTv"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imageObs"
+            android:layout_toEndOf="@id/imageObs"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_below="@+id/observationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateTv"
+            android:text="Date"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:layout_toRightOf="@id/imageObs"
+            android:layout_toEndOf="@id/imageObs"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/deleteIm"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:foregroundGravity="center_vertical"
+            android:scaleType="fitEnd"
+            android:src="@drawable/delete"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
